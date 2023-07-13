@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Share Tech", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,9 +40,11 @@ header {
 
 .not-found {
   margin: 1rem 0;
-  color: #ffffff;
-  font-size: 3rem;
+  color: #ff0101;
+  font-size: 7rem;
   font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .go-home-link {

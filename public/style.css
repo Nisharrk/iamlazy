@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Share Tech", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@ header {
 }
 
 .error {
-  background: #626464;
+  background: red;
   padding: 0.5rem 0.5rem;
   color: #ffffff;
   margin-bottom: 1rem;
