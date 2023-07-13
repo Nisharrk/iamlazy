@@ -44,7 +44,7 @@ app.get("/:id", async (req, res, next) => {
   try {
     const url = await urls.findOne({ slug: slug.toLowerCase() });
     if (url) {
-      return res.redirect(url.url);
+      return res.redirect(303, url.url);
     }
     return res.status(404).sendFile(notFoundPath);
   } catch (error) {

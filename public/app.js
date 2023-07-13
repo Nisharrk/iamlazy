@@ -34,9 +34,9 @@ document
 
       if (response.ok) {
         const result = await response.json();
-        const shortUrl = window.location.href + result.slug;
+        const shortUrl = result.slug;
         shortUrlLink.href = shortUrl;
-        shortUrlLink.textContent = shortUrl;
+        shortUrlLink.textContent = window.location.origin + "/" + shortUrl;
       } else if (response.status === 429) {
         errorDiv.textContent =
           "You are sending too many requests. Try again in 30 seconds.";
