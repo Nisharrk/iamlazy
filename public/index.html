@@ -3,7 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>IAMLAZY</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div>
+        <span class="logo">IAMLAZY</span><br />
+        <span class="description">A URL Shortner for the laziest you.</span>
+      </div>
+    </header>
+    <main id="app">
+      <form class="form" id="urlForm">
+        <div id="error" class="error"></div>
+        <input
+          class="input"
+          type="text"
+          name="url"
+          id="url"
+          placeholder="enter a url"
+        />
+        <input
+          class="input"
+          type="text"
+          name="slug"
+          id="slug"
+          placeholder="enter a slug"
+        />
+        <button type="submit" class="create">create</button>
+      </form>
+      <div id="created">
+        <p class="created">Your lazy URL: <a id="shortUrl"></a></p>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
